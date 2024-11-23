@@ -1,0 +1,52 @@
+@Test(dependsOnMethods = "onlyDepartment")
+@Test(dependsOnMethods = "wrongPassword")
+@Test(dependsOnMethods = "withoutDepartment")
+@Test(dependsOnMethods = "withoutAnyInput")
+
+
+
+<groups>
+			<define name="negative">
+				<include name="NEG1"></include>
+				<include name="NEG2"></include>
+			</define>
+		</groups>
+		
+		
+		
+		<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<run>
+			<exclude name="NEG1"></exclude>
+			<exclude name="NEG2"></exclude>
+		</run> <classes>
+			<class name="com.runnermaterials.LoginPageRunner" />
+		</classes>
+	</test>
+</suite>
+
+
+//	@Test(groups = "NEG")
+//	public void wrongPassword() {
+//		Assert.assertTrue(pageobject.getLoginpage().invaildPassword());
+//	}
+//
+//	@Test(groups = "NEG")
+//	public void withoutDepartment() {
+//		Assert.assertTrue(pageobject.getLoginpage().invaildDepartment());
+//	}
+//
+//	@Test(groups = "NEG")
+//	public void withoutAnyInput() {
+//		Assert.assertTrue(pageobject.getLoginpage().withoutAnyData());
+//	}
+//
+//	@Test(groups = "NEG")
+//	public void onlyDepartment() {
+//		Assert.assertTrue(pageobject.getLoginpage().departmentOnly());
+//	}
+
+
+		Assert.assertTrue(pageobject.getLoginpage().vaildLogin());

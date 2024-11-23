@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-22T11:52:30 IST" name="Default suite" finished-at="2024-11-22T11:52:45 IST" duration-ms="14960">
+    <groups>
+    </groups>
+    <test started-at="2024-11-22T11:52:30 IST" name="Default test" finished-at="2024-11-22T11:52:45 IST" duration-ms="14960">
+      <class name="com.runnermaterials.LoginPageRunner">
+        <test-method is-config="true" signature="browser()[pri:0, instance:com.runnermaterials.LoginPageRunner@3c77d488]" started-at="2024-11-22T11:52:30 IST" name="browser" finished-at="2024-11-22T11:52:36 IST" duration-ms="6020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method is-config="true" signature="extendReportStartup()[pri:0, instance:com.runnermaterials.LoginPageRunner@3c77d488]" started-at="2024-11-22T11:52:36 IST" name="extendReportStartup" finished-at="2024-11-22T11:52:37 IST" duration-ms="498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extendReportStartup -->
+        <test-method signature="validLoginTest()[pri:0, instance:com.runnermaterials.LoginPageRunner@3c77d488]" started-at="2024-11-22T11:52:37 IST" name="validLoginTest" finished-at="2024-11-22T11:52:43 IST" duration-ms="6012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.runnermaterials.LoginPageRunner@3c77d488]" started-at="2024-11-22T11:52:43 IST" name="closeBrowser" finished-at="2024-11-22T11:52:44 IST" duration-ms="511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="extendReportEnd()[pri:0, instance:com.runnermaterials.LoginPageRunner@3c77d488]" started-at="2024-11-22T11:52:44 IST" name="extendReportEnd" finished-at="2024-11-22T11:52:45 IST" duration-ms="1527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extendReportEnd -->
+      </class> <!-- com.runnermaterials.LoginPageRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

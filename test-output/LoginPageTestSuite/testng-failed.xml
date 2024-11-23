@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [LoginPageTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="PositiveTests(failed)">
+    <groups>
+      <run>
+        <include name="PositiveCase"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.runnermaterials.LoginPageRunner">
+        <methods>
+          <include name="validLoginTest"/>
+        </methods>
+      </class> <!-- com.runnermaterials.LoginPageRunner -->
+    </classes>
+  </test> <!-- PositiveTests(failed) -->
+  <test thread-count="5" parallel="tests" name="NegativeTests(failed)">
+    <groups>
+      <run>
+        <include name="NegativeCase1"/>
+        <include name="NegativeCase2"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.runnermaterials.LoginPageRunner">
+        <methods>
+          <include name="onlyDepartment"/>
+          <include name="withoutAnyInput"/>
+          <include name="withoutDepartment"/>
+          <include name="wrongPassword"/>
+        </methods>
+      </class> <!-- com.runnermaterials.LoginPageRunner -->
+    </classes>
+  </test> <!-- NegativeTests(failed) -->
+</suite> <!-- Failed suite [LoginPageTestSuite] -->
